@@ -1,4 +1,4 @@
-# PasswordManager
+# Password Manager - Python SQLite3 + Cryptography
 
 ## Working and implementations
 This program, although written in one single file, has been made flexible using the development in the form of functions.  
