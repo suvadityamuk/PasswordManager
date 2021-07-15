@@ -268,7 +268,6 @@ def UpdatePassword(username):
             res = dbcursor.fetchall()
             for i in res:
                 if re.match(f"[A-Za-z]*{titleOfPwd}[A-Za-z]*" ,i[0]):
-                # 15-06-2021 stopped here, continue update password from here
                     oldpwd = DecryptPassword(
                         key=res[0][2], nonce=res[0][3], data=res[0][1], as_data=bytes(username, encoding='utf-8')).decode('utf-8')
                     print(f'Password found - {i[0]} : {oldpwd}')
